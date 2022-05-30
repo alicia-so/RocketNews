@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+  }
+  #bg {
+    width: 100%;
+    background-image: url(./assets/read_news.jpg);
+    background-size: cover;
+    background-position: right;
+  }
+  :root {
+    --body-bg-color: #121214;
+    --text-color: #e1e1e6;
+    --title-color: #04d361;
+    --form-color: #a8a8a8;
+    --bg-button-color: #8257e5;
+  }
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  #container {
+    height: 100%;
+    padding: 50px 36px;
+    background-color: var(--body-bg-color);
+  }
+  #logo {
+    display: block;
+    max-width: 100%;
+    width: 390px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.562rem;
+    margin-top: 92px;
+  }
+  .content .titulo {
+    font: 700 24px/28.15px 'Work Sans', sans-serif;
+    color: var(--title-color);
+  }
+  .content .subtitulo {
+    font: 700 14px/15.68px 'Spartan', sans-serif;
+    color: var(--text-color);
+  }
+  .content .texto {
+    font: 400 14px/19.42px 'Spartan', sans-serif;
+    color: var(--text-color);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 50px;
+  }
+  form label {
+    font: 700 14px/19.42px 'Spartan', sans-serif;
+    color: var(--form-color);
+  }
+  form input {
+    position: absolute;
+    width: 650px;
+    height: 48px;
+    left: 36px;
+    top: 424px;
+    border-left: 5px solid var(--title-color);
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
+  }
+  form button {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 686px;
+    top: 424px;
+    background-color: var(--bg-button-color);
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
+  }
+  .ler-primeiro {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font: 700 14px/19.42 'Spartan', sans-serif;
+    color: var(--bg-button-color);
+  }
+  .ler-primeiro > img {
+    margin-left: 5px;
+  }
